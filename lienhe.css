@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Helvetica Neue", sans-serif;
+}
+
+body {
+    font-size: 16px;
+}
+
+.title {
+    margin-top: 10px;
+    color: #1da4f4;
+    padding: 14px 20px;
+    font-weight: bold;
+    border-left: 5px solid #1da4f4;
+    background-image: linear-gradient(to top, #dddddd, #ffffff);
+}
+
+.desc {
+    color: #333;
+    padding: 14px 20px;
+}

@@ -1,0 +1,378 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+html {
+    font-family: "Helvetica Neue", sans-serif;
+}
+
+body {
+    font-size: 16px;
+    background-image: url(./img/bodyimage.png);
+}
+
+/* Common */
+
+.clear-fix {
+    clear: both;
+}
+
+a {
+    text-decoration: none;
+}
+
+.content {
+    width: 1180px;
+    margin: 0 auto;
+    max-width: calc(100% - 48px);
+}
+
+.content.bgc {
+    background-color: #fff;
+}
+
+.banner-main {
+    position: relative;
+}
+
+.actions {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #02a8f3;
+}
+
+.actions a {
+    padding: 15px 20px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.actions a:hover {
+    text-decoration: underline;
+}
+
+/* Header */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    background: #02a8f3;
+    min-height: 40px;
+}
+
+.navbar .home {
+    padding: 11px 21px;
+    color: #fff;
+}
+
+.navbar > .menu > li {
+    display: inline-block;
+    position: relative;
+}
+
+.menu > li > a {
+    text-transform: uppercase;
+    color: #fff;
+    display: block;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 14px 15px;
+}
+.navbar .home:hover,
+.menu > li > a:hover {
+    background: linear-gradient(to bottom, #42c5fd 0%, #02a8f3 100%) !important;
+    color: #ffffff !important;
+}
+
+.menu > li:hover .sub-menu {
+    display: block;
+    z-index: 1;
+}
+
+.sub-menu {
+    display: none;
+    position: absolute;
+    left: 0px;
+    background-color: rgb(234, 230, 230);
+    max-width: 180px;
+}
+
+.sub-menu li {
+    border-bottom: 1px solid #f8f8f8;
+}
+
+.sub-menu a {
+    display: block;
+    padding: 10px 15px;
+    font-size: 14px;
+    color: #333;
+}
+
+.sub-menu a:hover {
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.1) 100%
+    );
+    color: #333333 !important;
+}
+/* Rowtime */
+
+.row-time {
+    height: 45px;
+}
+
+.row-p-btn {
+    background: #eee;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.row-p-btn .desc-time {
+    font-size: 14px;
+}
+.btn-search {
+    display: table;
+    border-collapse: separate;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.row-p-btn .input-search {
+    border: none;
+    border: #cccccc;
+    background-color: #fff !important;
+    padding: 8px 12px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.row-p-btn .btn-search button {
+    border: none;
+    background-color: #428bca;
+    color: #fff;
+    padding: 8px 12px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.row-p-btn .btn-search button:hover {
+    color: #000;
+    background-color: #caa202;
+    cursor: pointer;
+}
+
+/* Main-content */
+
+/* Aside */
+.aside {
+    width: 30%;
+    float: left;
+    background: #fff;
+    height: 2655px;
+}
+
+.aside .list {
+    padding: 10px;
+    background-color: #f5f5f5;
+}
+
+.aside .list li {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+
+.aside .list .title {
+    background-color: #02a8f3;
+    padding: 10px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.aside .list .icon-bars {
+    font-size: 22px;
+    margin-right: 10px;
+}
+
+.aside .list li {
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+
+.aside .list li a {
+    display: block;
+    padding: 10px;
+    padding-left: 9px;
+    color: #262626;
+}
+
+.aside .list li a:hover {
+    background-color: #3f9bec;
+    color: #fff;
+}
+
+.aside .img-covid {
+    padding: 10px;
+}
+
+.aside .img-covid img {
+    display: block;
+    width: 100%;
+}
+
+.aside .fanpage {
+    padding: 10px;
+}
+
+.aside .fanpage-desc {
+    padding: 10px;
+    background-color: #02a8f3;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.aside .img-fanpage {
+    width: 100%;
+    object-fit: cover;
+    padding: 15px;
+    border: 2px solid #ddd;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.aside .access {
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.aside .access .title {
+    padding: 15px;
+    background-color: #f5f5f5;
+    font-size: 16px;
+    border: 2px solid #ddd;
+}
+
+.aside .access .row {
+    display: flex;
+    padding: 15px;
+    border-left: 2px solid #ddd;
+    border-right: 2px solid #ddd;
+}
+
+.aside .access .row:last-child {
+    border-bottom: 2px solid #ddd;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.aside .access .row .icon {
+    margin-right: 10px;
+}
+
+.aside .access .qty {
+    margin-left: auto;
+}
+
+.aside .panel-album {
+    padding: 10px;
+}
+
+.aside .panel-album .boxed {
+    width: 60%;
+    height: 30px;
+    background-color: #02a8f3;
+    clip-path: polygon(0 0, 87% 0, 100% 100%, 0 100%);
+}
+
+.aside .panel-album .boxed .title {
+    line-height: 30px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.aside .panel-album .img-panel {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.aside .panel-album .list-job {
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.aside .panel-album .job {
+    width: 100%;
+    vertical-align: bottom;
+}
+
+/* Article */
+
+article {
+    width: 70%;
+    float: left;
+}
+
+iframe {
+    width: 824px;
+    height: 2655px;
+    background-color: #fff;
+}
+
+iframe.fb-fanpage {
+    width: 334px;
+    height: 400px;
+}
+
+iframe.iframe {
+    width: 200px;
+    height: 200px;
+    background: #fff;
+}
+
+/* Footer */
+.footer {
+    clear: both;
+    background-color: #0181b8;
+    position: relative;
+}
+
+.maps {
+    margin-top: 36px;
+    position: absolute;
+    right: 18%;
+    top: 2930px;
+}
+
+.footer p {
+    background-color: #02a8f3;
+    display: block;
+    color: #dcdcdc;
+    padding: 40px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.footer .back-home .icon-up {
+    display: block;
+    text-align: center;
+    font-size: 80px;
+    color: #333;
+}

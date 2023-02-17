@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Helvetica Neue", sans-serif;
+}
+
+body {
+    font-size: 16px;
+}
+
+/* Content */
+
+.content {
+    margin: 5px;
+    padding: 2px;
+    border: 1px solid #dcdcdc;
+}
+
+.content .title {
+    font-size: 20px;
+    color: #ff0000;
+    padding: 15px;
+    font-weight: bold;
+    border-bottom: 2px solid #dcdcdc;
+}
+
+.content .heading-content {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.content .head-title {
+    font-size: 14px;
+    color: #ff0000;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.content .heading-content .banner-school {
+    width: 558px;
+    height: 421px;
+    object-fit: cover;
+    padding: 4px;
+    border: 4px groove #02a8f3;
+}
+
+.content .body-content .head-body,
+.content .body-content .sub-title {
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+    padding: 15px;
+}
+
+.content .body-content .sub-title {
+    font-size: 18px;
+}
+
+.content .body-content .desc {
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: justify;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+}
