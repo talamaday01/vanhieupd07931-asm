@@ -32,18 +32,18 @@ body {
 }
 
 .content .head-title {
-    font-size: 14px;
+    font-size: 20px;
     color: #ff0000;
     font-weight: bold;
-    padding: 10px;
+    padding: 20px;
 }
 
 .content .heading-content .banner-school {
     width: 558px;
     height: 421px;
     object-fit: cover;
-    padding: 4px;
-    border: 4px groove #02a8f3;
+    padding: 10px;
+    border: 2px solid #ddd;
 }
 
 .content .body-content .head-body,
@@ -65,4 +65,9 @@ body {
     font-size: 16px;
     color: #333;
     line-height: 1.6;
+}
+
+.img {
+    width: 100%;
+    padding: 40px;
 }

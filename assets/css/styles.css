@@ -1,18 +1,13 @@
-* {
-    box-sizing: border-box;
-}
-
-html,
 body {
-    scroll-behavior: smooth;
-}
-
-html {
     font-family: "Helvetica Neue", sans-serif;
 }
 
+* {
+    box-sizing: border-box;
+}
+html,
 body {
-    font-size: 16px;
+    scroll-behavior: smooth;
     background-image: url(./img/bodyimage.png);
 }
 
@@ -43,7 +38,7 @@ a {
 .actions {
     display: flex;
     justify-content: flex-end;
-    background-color: #02a8f3;
+    background: linear-gradient(to bottom, #42c5fd 0%, #02a8f3 100%) !important;
 }
 
 .actions a {
@@ -81,12 +76,12 @@ a {
     display: block;
     font-size: 13px;
     font-weight: 700;
-    padding: 14px 15px;
+    padding: 14px 20px;
 }
 .navbar .home:hover,
 .menu > li > a:hover {
-    background: linear-gradient(to bottom, #42c5fd 0%, #02a8f3 100%) !important;
-    color: #ffffff !important;
+    background: linear-gradient(to bottom, #42c5fd 0%, #02a8f3 100%);
+    color: #ffffff;
 }
 
 .menu > li:hover .sub-menu {

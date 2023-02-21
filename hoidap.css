@@ -1,0 +1,91 @@
+body {
+    font-family: "Helvetica Neue", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+html,
+body {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+.content {
+    margin-left: 30px;
+    padding: 10px;
+    width: 90%;
+}
+
+.content .title {
+    font-size: 30px;
+    padding: 10px 0;
+    color: red;
+    font-weight: bold;
+}
+
+.content .desc {
+    margin: 10px 0;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.info .form {
+    margin-left: 38px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.info .form .name {
+    width: 30%;
+}
+
+.info .form input {
+    width: 50%;
+    display: block;
+    padding: 5px;
+    border: 2px solid #ddd;
+    outline: none;
+    border-radius: 5px;
+}
+
+.info .form input:focus {
+    outline: 2px solid #02a8f3;
+}
+
+.form-end {
+    margin-left: 38px;
+    width: 90%;
+    display: flex;
+}
+
+.form-end .desc {
+    width: 30%;
+}
+
+.form-end textarea {
+    width: 50%;
+    border: 2px solid #ddd;
+    outline: none;
+}
+
+.block-btn {
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #02a8f3;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn:hover {
+    background-color: #333;
+    color: #02a8f3;
+}
