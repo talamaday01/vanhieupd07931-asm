@@ -104,6 +104,7 @@ a {
 
 .sub-menu li {
     border-bottom: 1px solid #f8f8f8;
+    width: 180px;
 }
 
 .sub-menu a {
