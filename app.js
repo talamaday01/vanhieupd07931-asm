@@ -20,7 +20,6 @@ window.addEventListener("load", function () {
             d.getMonth() + 1
         } năm ${d.getFullYear()}, ${d.getHours()}:` + month;
     const imgPanel = document.querySelector(".img-panel");
-    console.log(imgPanel);
     let vt = 0;
     imgPanel.addEventListener("click", handlePanel);
     function handlePanel() {
@@ -41,4 +40,16 @@ window.addEventListener("load", function () {
         }
     }
     setInterval(handlePanel, 2500);
+    const modal = document.querySelector(".modal");
+    const actionBtn = document.querySelector(".login");
+    const body = document.body;
+    actionBtn.addEventListener("click", handleBtn);
+    function handleBtn(e) {
+        modal.classList.add("active");
+    }
+    body.addEventListener("click", function (e) {
+        if (e.target.matches(".modal")) {
+            modal.classList.remove("active");
+        }
+    });
 });

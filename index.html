@@ -23,7 +23,7 @@
                 <div class="content">
                     <div class="actions">
                         <a href="#!" class="action-btn">Đăng ký</a>
-                        <a href="#!" class="action-btn">Đăng nhập</a>
+                        <a href="#!" class="action-btn login">Đăng nhập</a>
                     </div>
                     <a href="#!">
                         <img
@@ -43,7 +43,14 @@
                                 <a href="./trangchu.html" target="page">Trang chủ</a>
                             </li>
                             <li>
-                                <a href="./gioithieu.html" target="page">Giới thiệu</a>
+                                <a href="./gioithieu.html" target="page">Giới thiệu
+                                    <i class="fa-sharp fa-solid fa-chevron-down"></i>
+                                </a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#!" class="link">Giới Thiệu Về Trường</a>
+                                    </li>
+                                </ul>
                             </li>
                             <li>
                                 <a href="#!">
@@ -66,18 +73,7 @@
                                 </ul>
                             </li>
                             <li>
-                                <a href="#!">Văn bản-kế hoạch
-                                    <i class="fa-sharp fa-solid fa-chevron-down"></i>
-                                </a>
-                                <ul class="sub-menu">
-                                    <li>
-                                        <a href="#!">Công văn</a>
-                                    </li>
-                                    <li>
-                                        <a href="#!">Báo cáo</a>
-                                    </li>
-                                    
-                                </ul>
+                                <a href="#!">Văn bản-kế hoạch</a>
                             </li>
                             <li>
                                 <a href="./lienhe.html" target="page">Liên Hệ</a>
@@ -209,6 +205,19 @@
                </div >
                </div>
             </footer>
+            <div class="modal">
+                <div class="container">
+                    <div class="form-group">
+                        <label for="tk">Tên Đăng nhập</label>
+                        <input type="text" id="tk">
+                    </div>
+                    <div class="form-group">
+                        <label for="pw">Mật Khẩu</label>
+                        <input type="password" id="pw">
+                        <button type="submit" class="btn">Đăng nhập</button>
+                    </div>
+                </div>
+            </div>
         </main>
         <div class="maps"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3837.359662888401!2d108.35580301402985!3d15.890217548432986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31420dbe442992b7%3A0xbaf0d7a96b141824!2zVHLGsOG7nW5nIFRIUFQgVHLhuqduIEjGsG5nIMSQ4bqhbw!5e0!3m2!1svi!2s!4v1676358982308!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="iframe"></iframe></div >
         <script src="./app.js"></script>
