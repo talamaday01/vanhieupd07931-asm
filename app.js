@@ -47,9 +47,21 @@ window.addEventListener("load", function () {
     function handleBtn(e) {
         modal.classList.add("active");
     }
+    const modalRegister = document.querySelector(".modal-register ");
+    const register = document.querySelector(".register");
+    register.addEventListener("click", function (e) {
+        modalRegister.classList.add("active");
+    });
     body.addEventListener("click", function (e) {
         if (e.target.matches(".modal")) {
             modal.classList.remove("active");
+        } else if (e.target.matches(".close")) {
+            modal.classList.remove("active");
+        } else if (e.target.matches(".modal-register")) {
+            modalRegister.classList.remove("active");
+        }
+        if (e.target.matches(".modal-register .close")) {
+            modalRegister.classList.remove("active");
         }
     });
 });

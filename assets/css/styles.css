@@ -401,13 +401,41 @@ iframe.iframe {
     display: flex;
 }
 
+.modal .title {
+    margin-bottom: 10px;
+    color: #f5f5f5;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
 .modal .container {
+    position: relative;
     width: 500px;
     background-color: #02a8f3;
     padding: 60px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
     animation: modal ease 1.5s;
+}
+
+.modal .container .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    background-color: gray;
+    border-radius: 5px;
+}
+
+.modal .container .close * {
+    pointer-events: none;
+}
+
+.modal .container .close:hover {
+    color: #fff;
+    background-color: #8f8f06;
+    cursor: pointer;
 }
 
 .modal .container label {
@@ -428,10 +456,12 @@ iframe.iframe {
 
 .modal .container .btn {
     display: block;
-    margin-top: 30px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 20px;
     border: 0;
     width: 100%;
-    padding: 10px;
+    padding: 15px;
     border-radius: 15px;
     cursor: pointer;
 }
@@ -439,7 +469,96 @@ iframe.iframe {
 .modal .container .btn:hover {
     background-color: #066e9b;
     color: #fff;
+}
+
+.modal .form-group a {
+    display: block;
+    margin-top: 20px;
+    color: #262626;
+    text-align: center;
+}
+
+.modal-register {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.modal-register.active {
+    display: flex;
+}
+
+.modal-register .title {
+    margin-bottom: 5px;
+    color: #f5f5f5;
+    font-size: 30px;
     font-weight: bold;
+    text-align: center;
+}
+
+.modal-register .body {
+    position: relative;
+    width: 500px;
+    background-color: #02a8f3;
+    padding: 60px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    animation: modal ease 1.5s;
+    position: absolute;
+}
+
+.modal-register .close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 10px;
+    background-color: gray;
+    border-radius: 5px;
+}
+
+.modal-register .close:hover {
+    color: #fff;
+    background-color: #8f8f06;
+    cursor: pointer;
+}
+
+.modal-register .close * {
+    pointer-events: none;
+}
+
+.modal-register .form-group label {
+    display: block;
+    padding: 20px 0 10px 0;
+    color: #333;
+    font-weight: bold;
+}
+
+.modal-register .form-group input {
+    padding: 10px;
+    width: 100%;
+    border-radius: 15px;
+    outline: none;
+    border: 0;
+}
+
+.modal-register .btn-register {
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 30px;
+    border: 0;
+    width: 100%;
+    padding: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.modal-register .btn-register:hover {
+    background-color: #066e9b;
+    color: #fff;
 }
 
 @keyframes modal {
