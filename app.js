@@ -11,14 +11,25 @@ window.addEventListener("load", function () {
     ];
     // let thang = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"];
     const descTime = document.querySelector(".desc-data-time");
-    let month = d.getMinutes();
-    if (month < 10) {
-        month = "0" + month;
+    let minute = d.getMinutes();
+    if (minute < 10) {
+        minute = "0" + minute;
     }
+    let time = null;
+    if (d.getHours() < 12) {
+        time = "AM";
+    } else {
+        time = "PM";
+    }
+
     descTime.textContent =
         `Hôm nay, ${ngay[d.getDay()]} ngày ${d.getDate()} tháng ${
             d.getMonth() + 1
-        } năm ${d.getFullYear()}, ${d.getHours()}:` + month;
+        } 
+            năm ${d.getFullYear()}, ${d.getHours()}:` +
+        minute +
+        " " +
+        time;
     const imgPanel = document.querySelector(".img-panel");
     let vt = 0;
     imgPanel.addEventListener("click", handlePanel);
