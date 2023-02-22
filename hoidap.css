@@ -50,9 +50,10 @@ body {
     outline: none;
     border-radius: 5px;
 }
-
+.form-end textarea:focus,
 .info .form input:focus {
     outline: 2px solid #02a8f3;
+    border: 2px solid transparent;
 }
 
 .form-end {
