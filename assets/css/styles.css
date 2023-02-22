@@ -559,8 +559,10 @@ iframe.iframe {
 @keyframes modal {
     from {
         transform: translateY(-594px);
+        opacity: 0;
     }
     to {
         transform: translateY(0px);
+        opacity: 1;
     }
 }
