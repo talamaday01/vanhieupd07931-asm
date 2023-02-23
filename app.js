@@ -15,21 +15,11 @@ window.addEventListener("load", function () {
     if (minute < 10) {
         minute = "0" + minute;
     }
-    let time = null;
-    if (d.getHours() < 12) {
-        time = "AM";
-    } else {
-        time = "PM";
-    }
-
     descTime.textContent =
         `Hôm nay, ${ngay[d.getDay()]} ngày ${d.getDate()} tháng ${
             d.getMonth() + 1
         } 
-            năm ${d.getFullYear()}, ${d.getHours()}:` +
-        minute +
-        " " +
-        time;
+            năm ${d.getFullYear()}, ${d.getHours()}:` + minute;
     const imgPanel = document.querySelector(".img-panel");
     let vt = 0;
     imgPanel.addEventListener("click", handlePanel);

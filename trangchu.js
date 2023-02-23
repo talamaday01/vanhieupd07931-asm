@@ -13,7 +13,7 @@ window.addEventListener("load", function () {
     let content = [
         "TUYỂN SINH LỚP 10 NĂM HỌC 2022-2023",
         "HỘI THI GIÁO VIÊN DẠY GIỎI CẤP TỈNH NĂM HỌC...",
-        "HOẠT ĐỘNG THỂ DỤC THỂ THAO",
+        "HOẠT ĐỘNG THỂ DỤC THỂ THAO NĂM HỌC 2022",
         "CHIẾN DỊCH TÌNH NGUYỆN “TIẾP SỨC MÙA THI” NĂM 2022",
         'CHIẾN DỊCH TÌNH NGUYỆN "HOA PHƯỢNG ĐỎ" NĂM 2022',
         "GIẢI BÓNG ĐÁ MINI NAM NỮ TRUYỀN THỐNG TRƯỜNG THPT...",
