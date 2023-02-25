@@ -83,7 +83,6 @@ a {
 
 .head .block-right {
     margin-top: 10px;
-    /* margin-right: 8px; */
     margin-left: -6px;
     width: 30%;
     float: left;
@@ -114,6 +113,11 @@ a {
     padding: 15px;
     border-bottom: 1px solid #d5d4cf;
 }
+
+.head .block-right .list li:hover {
+    background-color: #eee;
+}
+
 .head .block-right .thumb {
     width: 70px;
     height: 54px;
@@ -153,6 +157,10 @@ a {
     padding-bottom: 30px;
     flex-grow: 1;
     flex-shrink: 0;
+}
+
+.body .list-thumb .thumb-item:hover {
+    background: #eee;
 }
 
 .body .list-thumb .thumb-item .thumb-nail {

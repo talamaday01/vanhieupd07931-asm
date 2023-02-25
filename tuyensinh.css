@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 16px;
+}
+
+.content {
+    margin: 10px;
+    border: 2px solid #ddd;
+    padding-bottom: 60px;
+}
+
+.content .title {
+    padding: 20px;
+    font-size: 25px;
+    color: #333;
+    font-weight: bold;
+}
+
+.content .desc-time {
+    padding: 20px;
+    font-size: 18px;
+}
+
+figure img {
+    padding: 20px;
+    display: block;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 18px;
+}
+
+.content .list {
+    margin-top: 20px;
+}
+
+.content .list a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px 20px;
+    color: #0e2132;
+    font-size: 17px;
+}
+
+.content .list a:hover {
+    color: darkgray;
+}
+
+.feedback {
+    margin-top: 20px;
+    margin: 10px;
+}
+
+.feedback .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    border: 2px solid #ddd;
+}
+
+.feedback .row .block-left {
+    width: 50%;
+}
+
+.feedback .row .icon-comment {
+    margin-right: 10px;
+}
+
+.feedback .row .block-right {
+    width: 50%;
+}
+
+.feedback .row .block-right select {
+    width: 100%;
+    border: 2px solid #ddd;
+    padding: 10px 0;
+    border-radius: 5px;
+    outline: none;
+}
+
+.feedback .desc {
+    margin-top: 20px;
+    background-color: #f2dede;
+    width: 100%;
+    padding: 20px 20px 20px 30px;
+    border-radius: 10px;
+}
+
+.feedback .desc:hover {
+    color: blue;
+    cursor: pointer;
+}
+
+.letter-lock {
+    margin: 10px;
+    padding: 20px;
+    border: 2px solid #ddd;
+}
+
+.letter-lock .icon-tags {
+    margin-right: 10px;
+}
+
+.letter-lock em {
+    color: #1a3f5e;
+    font-style: italic;
+}
+
+.new-old {
+    margin: 10px;
+    padding: 20px;
+    border: 2px solid #ddd;
+}
+
+.new-old .title {
+    padding: 10px 0;
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+}
+
+.new-old .list a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 30px 0;
+    color: #333;
+}
+
+.new-old .list a:hover {
+    color: brown;
+}
+
+.new-old .list .icon-right {
+    margin-right: 10px;
+}
+
+.webs {
+    margin: 10px;
+    padding: 20px;
+    border: 2px solid #ddd;
+}
+
+.webs .title {
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 20px 0;
+}
+
+.webs .heading {
+    display: flex;
+    align-items: center;
+    gap: 0 5px;
+    font-size: 18px;
+    color: #666;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.webs .list {
+    margin-top: 5px;
+}
+
+.webs .list a {
+    display: inline-block;
+    text-decoration: none;
+    color: #002065;
+    padding: 10px 5px 10px 20px;
+}
+
+.webs .list a:hover {
+    color: #ff3115;
+}
